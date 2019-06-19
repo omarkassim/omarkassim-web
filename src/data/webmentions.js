@@ -2,8 +2,6 @@ const fs = require('fs')
 const fetch = require('node-fetch')
 const unionBy = require('lodash/unionBy')
 const domain = require('./site.json').domain
-// Load legacy webmentions from mxb.at
-const legacyWebmentions = require('./legacy/webmentions-mxb.at.json')
 
 // Load .env variables with dotenv
 require('dotenv').config()
