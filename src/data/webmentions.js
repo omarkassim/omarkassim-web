@@ -67,19 +67,13 @@ function writeToCache(data) {
 function readFromCache() {
     if (fs.existsSync(CACHE_FILE_PATH)) {
         const cacheFile = fs.readFileSync(CACHE_FILE_PATH)
-        const cachedWebmentions = JSON.parse(cacheFile)
-
-        // merge cache with wms for legacy domain
-        return {
-            lastFetched: cachedWebmentions.lastFetched,
-            children: mergeWebmentions(legacyWebmentions, cachedWebmentions)
-        }
+        return JSON.parse(cacheFile)
     }
 
     // no cache found.
     return {
         lastFetched: null,
-        children: legacyWebmentions.children
+        children: []
     }
 }
 
