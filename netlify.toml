@@ -10,10 +10,16 @@
 [[headers]]
     for = "/*"
     [headers.values]
+        Content-Security-Policy-Report-Only = "default-src https:"
         X-Frame-Options = "DENY"
         X-XSS-Protection = "1; mode=block"
         X-Content-Type-Options = "nosniff"
-        Referrer-Policy= "no-referrer-when-downgrade"
+        Referrer-Policy = "strict-origin-when-cross-origin"
+        Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
+
+    
+    
+
 
 # 404s
 [[redirects]]

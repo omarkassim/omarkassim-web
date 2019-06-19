@@ -9,7 +9,7 @@ I was inspired by Max Boeck's personal site, [mxb.dev](https://mxb.dev) and [for
 This site is built with [Eleventy](https://www.11ty.io).
 
 ## License
-[MIT License](/LICENSE.txt). All content is copyright Omar Kassim.
+[MIT License](/LICENSE). All content is copyright Omar Kassim.
 
 ## Features
 
