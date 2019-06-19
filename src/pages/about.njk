@@ -1,0 +1,86 @@
+---
+layout: base
+tags: nav
+title: About Me
+navtitle: About
+navorder: 4
+permalink: about/index.html
+---
+<div class="page page--about">
+    <header class="page__header">
+        <h1 class="page__title">Hello!</h1>
+    </header>
+    <div class="page__content page__content--fullwidth">
+
+        <div class="about">
+            <div class="about__header">
+                <div class="about__photo">
+                    <img
+                        class="responsive-image js-responsive-image"
+                        src="{{ '/assets/images/omar-kassim-800.jpg' | url }}"
+                        srcset="{{ '/assets/images/omar-kassim-800.jpg' | url }} 800w, 
+                        {{ '/assets/images/omar-kassim-1600.jpg' | url }} 1600w"
+                        sizes="(min-width: 940px) 40vw, 100vw"
+                        alt="Omar Kassim"
+                    />
+                </div>
+                <div class="about__intro lead">
+                    <p>I’m Omar Kassim, an optimistic technology enterpreneur!</p>
+                </div>
+            </div>
+            <div class="about__content markdown">
+                <h2>Work</h2>
+                <p>
+                    I work at <a href="https://nomod.com" target="_blank">Nomod</a>, a new digital challenger bank for MENA and South Asia.
+                </p>
+                <p>
+                    I previously founded JadoPado, an e-commerce marketplace platform 
+                    that <a href="https://www.reuters.com/article/emirates-technology-jadopado-idUSL8N1ID1GK" target="_blank">we exited to Noon.com in May 2017</a>.
+                </p>
+
+                <p>
+                    I have also spent time working in and building out my family business, <a href="https://esanjo.com" target="_blank">Esanjo Ventures</a>, a trading, investment and technology business, that we use for most our activities in the region.
+            
+                <h2>Writing</h2>
+                <p>
+                    I recently consolidated my more analytical posts covering regional startups over at <a href="https://varhunt.com" target="_blank">Varhunt</a> such as my <a href="https://varhunt.com/diving-into-careems-cap-table/" target="_blank">dive into Careem's cap table</a> or this <a href="https://varhunt.com/whats-hiding-behind-noons-beta/" target="_blank">crazy long post digging into Noon.com's beta</a>.
+                    
+                <p>
+                    Varhunt is my place for work content, whilst personal content, and idle thoughts site on this site.
+                </p>
+
+                <p>
+                    I also occassionaly write elsewhere such as this piece in Entreprenuer Middle East about <a href="https://www.entrepreneur.com/article/283586" target="_blank">how we went about building JadoPado</a>. </p>
+                </p>
+
+                <h2>Speaking</h2>
+                <p>
+                    I generally avoid doing events (the Internet is an incredibly efficient teacher), but do turn up when necessary. 
+                </p>
+                <p>    
+                    I am however happy to speak publicly
+                    when the right opportunity arise or if I think it may be fun to do so! 
+                </p>
+                <h3 class="smalltitle">Previous Topics</h3>
+                <ul>
+                    <li><a href="https://speakerdeck.com/omarkassim/cityscape-conference-2017-blockchain-plus-real-estate" target="_blank">Blockchain + Real Esate</a>, <small>2017</small></li>
+                    <li><a href="https://youtu.be/qbw2TTofVJ4?t=1392" target="_blank">The Dominance of the Marketplace</a>, <small>2015</small></li>
+                </ul>
+                <p>
+                    If you think it may be fun to have me speak at an upcoming event, please feel free to reach out!
+                </p>
+                
+                <h2 id="contact">Contact</h2>
+                <p>
+                    It's easiest to contact me on <a href="{{ author.social.twitter.url }}">Twitter</a> or if you really really need to, you <a href="mailto:{{ author.email | obfuscate | safe }}">can email me</a>.
+
+                <h2>Social</h2>
+                <ul class="about__social">
+                    <li>{% icon "twitter" %}<a href="{{ author.social.twitter.url }}">Twitter</a></li>
+                    <li>{% icon "github" %}<a href="{{ author.social.github.url }}">Github</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

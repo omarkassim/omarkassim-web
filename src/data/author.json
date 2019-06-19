@@ -1,0 +1,15 @@
+{
+    "name": "Omar Kassim",
+    "email": "hello@omarkassim.com",
+    "avatar": "/assets/images/avatar.jpg",
+    "social": {
+        "twitter": {
+            "name": "okassim",
+            "url": "https://twitter.com/okassim"
+        },
+        "github": {
+            "name": "omarkassim",
+            "url": "https://github.com/omarkassim"
+        }
+    }
+}

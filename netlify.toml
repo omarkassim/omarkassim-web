@@ -1,0 +1,22 @@
+[build]
+    command = "yarn run build"
+    publish = "dist"
+    functions = "functions"
+
+[build.environment]
+    NODE_VERSION = "10.15"
+    YARN_VERSION = "1.16.0"
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "DENY"
+        X-XSS-Protection = "1; mode=block"
+        X-Content-Type-Options = "nosniff"
+        Referrer-Policy= "no-referrer-when-downgrade"
+
+# 404s
+[[redirects]]
+    from = "*"
+    to = "/404"
+    status = 404
