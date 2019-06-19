@@ -1,4 +1,6 @@
-# OMARKassim.com 
+# OMARKassim.com
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/527f1bcc-6431-416f-b288-66515d3c0760/deploy-status)](https://app.netlify.com/sites/omarkassim/deploys)
 
 This is the source for my personal site, [OMARKassim.com](https://omarkassim.com).
 
