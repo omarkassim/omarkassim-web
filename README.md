@@ -36,6 +36,4 @@ The most important commands can be run as npm scripts:
 `npm start`: make a development build and serve the site through browsersync  
 `npm run build`: make a production build  
 `npm run serve`: serve the current build `dist` directory  
-`npm run debug`: start Eleventy in debug mode and serve the site  
-`npm run serve:lambda`: serve lambda functions with netlify-lambda  
-`npm run build:lambda`: compile lambda functions for production  
+`npm run debug`: start Eleventy in debug mode and serve the site

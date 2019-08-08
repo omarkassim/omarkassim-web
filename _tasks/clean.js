@@ -4,5 +4,5 @@ const del = require('del')
 
 gulp.task(
     'clean',
-    del.bind(null, [config.buildDest, config.lambdaDest], { dot: true })
+    del.bind(null, [config.buildDest], { dot: true })
 )

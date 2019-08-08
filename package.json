@@ -4,11 +4,9 @@
   "description": "Personal Website of Omar Kassim",
   "scripts": {
     "start": "gulp build:dev && yarn run serve",
-    "build": "NODE_ENV=production gulp build && yarn run build:lambda",
+    "build": "NODE_ENV=production gulp build",
     "debug": "DEBUG=Eleventy* yarn start",
-    "serve": "gulp serve",
-    "serve:lambda": "netlify-lambda serve _lambda",
-    "build:lambda": "netlify-lambda build _lambda"
+    "serve": "gulp serve"
   },
   "repository": {
     "type": "git",
@@ -53,7 +51,6 @@
     "html-entities": "^1.2.1",
     "html-minifier": "^3.5.20",
     "luxon": "^1.8.2",
-    "netlify-lambda": "^1.1.1",
     "node-fetch": "^2.3.0",
     "require-dir": "^1.2.0",
     "sanitize-html": "^1.20.0",
