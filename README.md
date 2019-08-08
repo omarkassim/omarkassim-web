@@ -18,8 +18,6 @@ This site is built with [Eleventy](https://www.11ty.io).
 * Vanilla JS (ES6 / Babel)
 * System Fonts & FOUT
 * Offline Support w/ Service Worker
-* Webmention.io Support
-* Auto-publish notes on twitter via AWS Lambda Function
 * Focus on Speed and Accessibility
 
 ## Installation
