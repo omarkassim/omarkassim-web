@@ -34,10 +34,6 @@ module.exports = {
         return limit > 0 ? array.slice(0, limit) : array.slice(limit)
     },
 
-    excludePost: function(allPosts, currentPost) {
-        return allPosts.filter(post => post.inputPath !== currentPost.inputPath)
-    },
-
     currentPage: function(allPages, currentPage) {
         const matches = allPages.filter(
             page => page.inputPath === currentPage.inputPath
@@ -86,10 +82,6 @@ module.exports = {
 
     media: function(filename, page) {
         const path = page.inputPath.split('/')
-        if (path.length && path.includes('posts')) {
-            const subdir = path[path.length - 2]
-            return `/assets/media/${subdir}/${filename}`
-        }
         return filename
     },
 

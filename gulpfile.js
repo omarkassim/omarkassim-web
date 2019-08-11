@@ -3,7 +3,7 @@ const gulp = require('gulp')
 require('require-dir')('./_tasks')
 
 // Run the asset pipeline
-gulp.task('assets', gulp.parallel('styles', 'scripts', 'icons', 'copy'))
+gulp.task('assets', gulp.parallel('styles', 'scripts', 'icons'))
 
 // Development Build Process
 gulp.task('build:dev', gulp.series('clean', 'generate', 'assets'))

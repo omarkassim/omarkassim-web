@@ -28,7 +28,6 @@ module.exports = function(config) {
     // Layouts
     config.addLayoutAlias('base', 'base.njk')
     config.addLayoutAlias('page', 'page.njk')
-    config.addLayoutAlias('post', 'post.njk')
 
     // Pass-through files
     config.addPassthroughCopy('src/site.webmanifest')
@@ -66,16 +65,6 @@ module.exports = function(config) {
         return collection.getFilteredByTag('nav').sort(function(a, b) {
             return a.data.navorder - b.data.navorder
         })
-    })
-
-    // Collections: Posts
-    config.addCollection('posts', function(collection) {
-        const pathsRegex = /\/posts\/|\/drafts\//
-        return collection
-            .getAllSorted()
-            .filter(item => item.inputPath.match(pathsRegex) !== null)
-            .filter(item => item.data.permalink !== false)
-            .filter(item => !(item.data.draft && isProduction))
     })
 
     // Minify HTML Output
