@@ -22,9 +22,9 @@ This site is built with [Eleventy](https://www.11ty.io).
 
 ## Installation
 
-Eleventy is a static site generator based on Javascript, which means you will need node amd yarn (or npm) to run it.
+Eleventy is a static site generator based on Javascript, which means you will need node and npm (or yarn) to run it.
 
-Inside the project root, run `yarn` to install all dependencies.
+Inside the project root, run `npm install` to install all dependencies.
 
 Run `npm start` to get your development build up and running!
 
@@ -37,3 +37,7 @@ The most important commands can be run as npm scripts:
 `npm run build`: make a production build  
 `npm run serve`: serve the current build `dist` directory  
 `npm run debug`: start Eleventy in debug mode and serve the site
+
+## Additional Bits
+
+Added [`npm-force-resolutions`](https://www.npmjs.com/package/npm-force-resolutions) to fix npm package vulnerabilities that [remained open after Eleventy's v0.11.0 release](https://github.com/11ty/eleventy/issues/1164) 
