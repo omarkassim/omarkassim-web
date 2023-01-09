@@ -52,7 +52,7 @@
     "html-entities": "^1.2.1",
     "html-minifier": "^3.5.20",
     "http-proxy": "^1.18.1",
-    "luxon": "^1.8.2",
+    "luxon": "^1.28.1",
     "minimist": "^1.2.5",
     "node-fetch": "^2.6.1",
     "require-dir": "^1.2.0",
